@@ -9,9 +9,9 @@ contract ENS {
         string message;
     }
 
-    mapping(string => DomainInfo) public   domain;
+    mapping(string => DomainInfo) public  domain;
     
-    address public userAddress;
+    //address public userAddress;
     uint public fees = 1000000;
 
     function registerDomain(string memory _input) public payable  {
@@ -24,8 +24,8 @@ contract ENS {
         
     }
 
-    function returnAddress(string memory _input) public view returns(string memory){
-        return domain[_input].message;
+    function returnAddress(string memory _input) public view returns(address){
+        return domain[_input].userAddress;
     }
 
     

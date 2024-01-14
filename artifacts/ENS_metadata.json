@@ -76,19 +76,6 @@
 				"name": "returnAddress",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "userAddress",
-				"outputs": [
-					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -133,11 +120,11 @@
 	},
 	"sources": {
 		"Nik_MD_project1.sol": {
-			"keccak256": "0x42df004aa8afc8e29f8fc81232a4dead3a5f272937cc748aa9f6427ae7589115",
+			"keccak256": "0xb9199a3141f987a01cc956de5a8add30e4e29422b8566c2b74cff8dc8fbda7fe",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://96433e513a5a6a7bd38c5ff72057d150be3b02435f7293afc70b31746ae15731",
-				"dweb:/ipfs/Qmb6EEtnb5RHyvk1bwYJW4LQNuYvMVa4gm9Xfs8T8CD1my"
+				"bzz-raw://5e96d02903a6783ce3b0391a7e353610cf48c031f62b61078ad63f99dee4771f",
+				"dweb:/ipfs/Qmcu1ZenHQ1MVjphQThiWkUC7uw5gwnPwJsXdcEseV2Lzd"
 			]
 		}
 	},
