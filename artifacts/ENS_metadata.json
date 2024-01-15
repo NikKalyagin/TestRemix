@@ -12,6 +12,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "alive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "cofficient",
 				"outputs": [
 					{
@@ -21,6 +34,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -57,6 +77,11 @@
 						"internalType": "uint8",
 						"name": "year",
 						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "remainder",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -203,7 +228,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Nik_MD_project2.sol": "ENS"
+			"Nik_MD_project2_ext.sol": "ENS"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -217,12 +242,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Nik_MD_project2.sol": {
-			"keccak256": "0x3db2b2a54f44101181f6e1d6c5797d2703eaf27856e2dd9d5efb51aaaa4bc25a",
+		"Nik_MD_project2_ext.sol": {
+			"keccak256": "0xad2cbae5e0ed4fa528a1e26a13f9ecbb2d662941069563082e21c651ee8cc820",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://85b2d06c971dd106d63f0a86131f949989f087c331d3e0672f5d97693ef2ac11",
-				"dweb:/ipfs/Qmb9dtyapytjkPXpZdUAR78HECJCSjdXxG1TxbH1qte23R"
+				"bzz-raw://080817ac7d19193583f2f7285a97badabdbc5324490d4b60c44e09c6516fd233",
+				"dweb:/ipfs/QmcqfYAKmwfeQzAYmQ4eVqJC3wGFUr3LGY3rYtsF7DasFD"
 			]
 		}
 	},
