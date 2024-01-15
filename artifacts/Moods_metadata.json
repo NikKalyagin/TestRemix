@@ -7,8 +7,61 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_num",
+						"type": "uint8"
+					}
+				],
+				"name": "counters",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "counters",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentMood",
+				"outputs": [
+					{
+						"internalType": "enum Moods.Mood",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -46,7 +99,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getBalance",
+				"name": "fees",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -59,12 +112,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "regCostYear",
+				"name": "newNum",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -105,34 +158,34 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_newRegCostYear",
-						"type": "uint256"
+						"internalType": "enum Moods.Mood",
+						"name": "_mood",
+						"type": "uint8"
 					}
 				],
-				"name": "setRegCostYear",
+				"name": "setMood",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Moods.Mood",
+						"name": "_expectedMood",
+						"type": "uint8"
+					}
+				],
+				"name": "someAction",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "totalBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "withdrawFunds",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -149,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Nik_MD_project2.sol": "ENS"
+			"test.sol": "Moods"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -163,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Nik_MD_project2.sol": {
-			"keccak256": "0xd3e6e01d50ef15b03cf5433903b45000db5183ebda96063cadda37715d721cfb",
+		"test.sol": {
+			"keccak256": "0x3033fdfdae48abc8b556f3d947729d13a6286b9d07d09b3c27be485496780b66",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b300fabfdd9b728a13796009014fe588342aecc387f0c0b0d916cfef0cc797cc",
-				"dweb:/ipfs/QmXnzJHTtg8hryfDWJZ7vqz5N23kbV8kDrbHk8AmpBT358"
+				"bzz-raw://1f0e65a9df59977a09d6ff33ae22ed94b61f824771764aff290d3bcb2fa59580",
+				"dweb:/ipfs/QmTkVfWrzSLCKa9sVEyRhFXRxvqv2sK5a68Jt2sFZLkYgi"
 			]
 		}
 	},
