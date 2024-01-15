@@ -6,73 +6,65 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "bool",
-						"name": "_invited",
-						"type": "bool"
-					}
-				],
-				"name": "addFriend",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "addGuest",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "funcFour",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "friendList",
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "funcOne",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "bool",
-						"name": "invited",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "funcThree",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "funcTwo",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "guestList",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myNumber",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "bool",
-						"name": "invited",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -92,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practice32.sol": "MyContract"
+			"practice38.sol": "MyContract"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -106,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"practice32.sol": {
-			"keccak256": "0xc8592085430afb5b134e570788dede2f1b8f6428bd02027b5c072fde0c2dc9da",
+		"practice38.sol": {
+			"keccak256": "0x6b317f207c337e8f8b656e704ff4d9e7a6fb2ab7783a631823a2380a74be7c88",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3331cbe8106a24597b97a7017bd9fafae1b3a4523c2923ba434dbbb8424ecf4a",
-				"dweb:/ipfs/QmSYL9Va7KUzdTAnvRcZAJrXrGjVMTct1PiBLeQtNjcKjV"
+				"bzz-raw://74a368457ee5aefe184f27f32cbc3ea054b3b26df4d8f349d1d54d87d9d3df76",
+				"dweb:/ipfs/QmU5xivEdvXfZc2AhGNBmB744Xbya8xX5apJcH4fs2bmUj"
 			]
 		}
 	},
