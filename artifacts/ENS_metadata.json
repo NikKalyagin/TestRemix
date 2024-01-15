@@ -11,6 +11,19 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "cofficient",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -39,6 +52,11 @@
 						"internalType": "string",
 						"name": "message",
 						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "year",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -55,6 +73,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_input",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_year",
+						"type": "uint8"
+					}
+				],
+				"name": "prolongateRent",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -76,6 +112,11 @@
 						"internalType": "string",
 						"name": "_input",
 						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_year",
+						"type": "uint8"
 					}
 				],
 				"name": "registerDomain",
@@ -100,6 +141,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_newCofficient",
+						"type": "uint8"
+					}
+				],
+				"name": "setCofficient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -164,11 +218,11 @@
 	},
 	"sources": {
 		"Nik_MD_project2.sol": {
-			"keccak256": "0xd3e6e01d50ef15b03cf5433903b45000db5183ebda96063cadda37715d721cfb",
+			"keccak256": "0x3db2b2a54f44101181f6e1d6c5797d2703eaf27856e2dd9d5efb51aaaa4bc25a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b300fabfdd9b728a13796009014fe588342aecc387f0c0b0d916cfef0cc797cc",
-				"dweb:/ipfs/QmXnzJHTtg8hryfDWJZ7vqz5N23kbV8kDrbHk8AmpBT358"
+				"bzz-raw://85b2d06c971dd106d63f0a86131f949989f087c331d3e0672f5d97693ef2ac11",
+				"dweb:/ipfs/Qmb9dtyapytjkPXpZdUAR78HECJCSjdXxG1TxbH1qte23R"
 			]
 		}
 	},
