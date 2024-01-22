@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
@@ -16,57 +22,40 @@
 					{
 						"indexed": false,
 						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "_to",
+						"name": "_thisAddr",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "_balance",
 						"type": "uint256"
 					}
 				],
-				"name": "TokensSent",
+				"name": "Deployed",
 				"type": "event"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "sendToken",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "tokenBalance",
+				"inputs": [],
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -86,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test1.sol": "EventDemo"
+			"Deploy.sol": "Demo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -100,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test1.sol": {
-			"keccak256": "0x075c719a716cd3c9440a3c6fb5baf00542d7d0386d704262eeeffa580f46f1d7",
+		"Deploy.sol": {
+			"keccak256": "0x5bcd9a1b8bef783931e9199b35871b9342e85966eb7aed269fa6540f41c3ba9f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b44e1d17f2c54cc5bca936c61e0f67ef821d0e39d85ac6c9ae87fadf5e66fc1f",
-				"dweb:/ipfs/QmfYyXAbBpyYeQmaN9oJpxQSNWoQrDKod1LAgDkGRPidYR"
+				"bzz-raw://755601eff1daddd33d279904a4c4d2b01b1fb7e1d3aa2c459b8dee3b6d5eb92f",
+				"dweb:/ipfs/QmSXP3RUuVGTQqWVAvHi88y4fSfoeUPJkZJenSTnnWNCmC"
 			]
 		}
 	},
