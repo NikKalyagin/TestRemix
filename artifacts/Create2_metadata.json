@@ -6,38 +6,58 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
-					}
-				],
-				"stateMutability": "payable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
 						"indexed": false,
 						"internalType": "address",
-						"name": "_thisAddr",
+						"name": "_newContract",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_balance",
-						"type": "uint256"
 					}
 				],
-				"name": "Deployed",
+				"name": "Deploy",
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_salt",
+						"type": "uint256"
+					}
+				],
+				"name": "deploy",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "bytecode",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_salt",
+						"type": "uint256"
+					}
+				],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getBalance",
+				"name": "getBalance1",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -49,16 +69,22 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "_owner",
 						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"name": "getBytecode",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -75,7 +101,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Deploy.sol": "Demo"
+			"Deploy.sol": "Create2"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},

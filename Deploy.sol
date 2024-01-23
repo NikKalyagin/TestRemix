@@ -14,3 +14,34 @@ contract Demo{
         return address(this).balance;
     }
 }
+
+contract Create2 {
+    event Deploy(address _newContract);
+
+    function deploy(uint _salt) external payable {
+        Demo newContract = new Demo{
+            salt: bytes32(_salt),
+            value: msg.value
+            }(msg.sender);
+            emit Deploy(address(newContract));
+    }
+
+    function getBalance1() public view  returns(uint) {
+        return address(this).balance;
+    }
+
+    function getBytecode(address _owner) public pure returns(bytes memory) {
+        bytes memory bytecode = type(Demo).creationCode;
+        return abi.encodePacked(bytecode, abi.encode(_owner));
+    }
+
+    function getAddress(bytes memory bytecode, uint _salt) public view returns (address) {
+        bytes32 hash = keccak256(
+            abi.encodePacked(
+                bytes1(0xff), address(this), _salt, keccak256(bytecode)
+            )
+        );
+
+        return address(uint160(uint(hash)));
+    }
+}
