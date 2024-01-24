@@ -1,0 +1,114 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timeOfCreation1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_record",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getRecordType1",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "typeContr",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "record1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_record",
+						"type": "address"
+					}
+				],
+				"name": "setRecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "timeOfCreation1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Nik_MD_project3.sol": "AddressRecord"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Nik_MD_project3.sol": {
+			"keccak256": "0x94efe196a34de22d50f88433f2451b109a8b444cd5e00928e49fffa7ab2e0517",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://04975b751e3bf36c870ed933ebde99d98d04c9606edb0622079696c5b29014c3",
+				"dweb:/ipfs/QmY6sHwqmV2YUUdWc5ahg2iWNXhYyWygwnyCGTwUpQRvps"
+			]
+		}
+	},
+	"version": 1
+}
