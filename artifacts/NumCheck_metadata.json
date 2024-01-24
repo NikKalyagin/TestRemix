@@ -4,21 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
-					}
-				],
-				"name": "sendMoney",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -32,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practice48.sol": "First"
+			"library.sol": "NumCheck"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"practice48.sol": {
-			"keccak256": "0x2df17030d522ab77318b9b44130554779ef5451a2aa9fbb8204937f6b40efd45",
+		"library.sol": {
+			"keccak256": "0x0637f62bc651656b10bbf39f9abb6369205919fc969d56f74656b97a85f768cf",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9ea22860c9b4bc19ae8560a87e8714e25f4157d64bfdad27b24f93a5fa1eb479",
-				"dweb:/ipfs/QmUkigg1YXBY6jnzQuzYwfxxshxraF4Jr7W562C4suN1JJ"
+				"bzz-raw://c0a90145d653a4906aaff9350ddd9562f533e1555c63f5dd3a50ebe572b0186a",
+				"dweb:/ipfs/QmX8SovY6SMFKQ5henKR8ktmrrdsBanawTsJa4LYCFQaUV"
 			]
 		}
 	},

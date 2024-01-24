@@ -4,7 +4,29 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +40,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ptactice41.sol": "Third"
+			"practice48.sol": "Third"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -32,12 +54,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ptactice41.sol": {
-			"keccak256": "0x48cbd9c6a761feba243e7ffbd73d8e717292bc788d171ff1faa1742179a88a84",
+		"practice48.sol": {
+			"keccak256": "0x2df17030d522ab77318b9b44130554779ef5451a2aa9fbb8204937f6b40efd45",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cd92f3065e6126edf5ef4e48e5631ce03440a0f4921dce492d5264160977d2d7",
-				"dweb:/ipfs/Qma4ny9NoBZ7ymkuE6567k5NN7rhXk1XP7w4u3dm3F672h"
+				"bzz-raw://9ea22860c9b4bc19ae8560a87e8714e25f4157d64bfdad27b24f93a5fa1eb479",
+				"dweb:/ipfs/QmUkigg1YXBY6jnzQuzYwfxxshxraF4Jr7W562C4suN1JJ"
 			]
 		}
 	},

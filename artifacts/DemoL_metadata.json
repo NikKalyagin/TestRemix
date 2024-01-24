@@ -6,25 +6,23 @@
 	"output": {
 		"abi": [
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_Int",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "isEven",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -40,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practice48.sol": "Second"
+			"library.sol": "DemoL"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -54,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"practice48.sol": {
-			"keccak256": "0x2df17030d522ab77318b9b44130554779ef5451a2aa9fbb8204937f6b40efd45",
+		"library.sol": {
+			"keccak256": "0x0637f62bc651656b10bbf39f9abb6369205919fc969d56f74656b97a85f768cf",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9ea22860c9b4bc19ae8560a87e8714e25f4157d64bfdad27b24f93a5fa1eb479",
-				"dweb:/ipfs/QmUkigg1YXBY6jnzQuzYwfxxshxraF4Jr7W562C4suN1JJ"
+				"bzz-raw://c0a90145d653a4906aaff9350ddd9562f533e1555c63f5dd3a50ebe572b0186a",
+				"dweb:/ipfs/QmX8SovY6SMFKQ5henKR8ktmrrdsBanawTsJa4LYCFQaUV"
 			]
 		}
 	},
