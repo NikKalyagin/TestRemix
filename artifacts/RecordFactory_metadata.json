@@ -85,19 +85,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "i",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "record",
 				"outputs": [
 					{
@@ -140,58 +127,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_record",
-						"type": "string"
-					}
-				],
-				"name": "setRecord",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_record",
-						"type": "address"
-					}
-				],
-				"name": "setRecord",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "timeOfCreation",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "timeOfCreation1",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -222,11 +157,11 @@
 	},
 	"sources": {
 		"Nik_MD_project3.sol": {
-			"keccak256": "0x94efe196a34de22d50f88433f2451b109a8b444cd5e00928e49fffa7ab2e0517",
+			"keccak256": "0xa51bbd9f31c02242f846e5a76d0265d8b0f7770ed332978399e4cbe287ddd7bf",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://04975b751e3bf36c870ed933ebde99d98d04c9606edb0622079696c5b29014c3",
-				"dweb:/ipfs/QmY6sHwqmV2YUUdWc5ahg2iWNXhYyWygwnyCGTwUpQRvps"
+				"bzz-raw://626dd89d3042e9547f4f3b9359b280843e3f13b56023cfe4eb35de422790bd4e",
+				"dweb:/ipfs/QmPS8Z7HrenoKVKSQP4xHJmBGa2yqM6c5Pext51ZXj8oJX"
 			]
 		}
 	},

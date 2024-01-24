@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract StringRecord {
-    uint public timeOfCreation;
+    uint internal timeOfCreation;
     string public record;
 
     constructor(uint _timeOfCreation, string memory _record) payable {
@@ -14,13 +14,13 @@ contract StringRecord {
         return typeContr = "string";
     }
 
-    function setRecord(string memory _record) public  {
+    function setRecord(string memory _record) internal  {
         record = _record;
     }
 }
 
 contract AddressRecord {
-    uint public timeOfCreation1;
+    uint internal timeOfCreation1;
     address public record1;
 
     constructor(uint _timeOfCreation1, address _record) payable {
@@ -32,7 +32,7 @@ contract AddressRecord {
         return typeContr = "address";
     }
 
-    function setRecord(address _record) public    {
+    function setRecord(address _record) internal    {
         record1 = _record;
     }
 }
@@ -42,7 +42,7 @@ contract RecordFactory is StringRecord, AddressRecord  {
    StringRecord(_timeOfCreation, _record)  AddressRecord(_timeOfCreation1, _record1) {}
    
    mapping(uint => string) public records;
-   uint public i;
+   uint internal  i;
 
    function addRecord(string memory _record) public  {
     StringRecord.setRecord(_record);
