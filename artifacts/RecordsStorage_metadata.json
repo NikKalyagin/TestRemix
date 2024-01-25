@@ -6,6 +6,43 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_domain",
+						"type": "string"
+					}
+				],
+				"name": "addDomain",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "addFactory",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -29,6 +66,25 @@
 				"name": "addRecord",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "factories",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -64,7 +120,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Nik_MD_project3_1.sol": "RecordFactory"
+			"Nik_MD_project4.sol": "RecordsStorage"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -78,12 +134,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Nik_MD_project3_1.sol": {
-			"keccak256": "0x0b6ff3322b44be26f1aceaad4dfd1fd44643511281f9ca84f08591418327e0f6",
+		"Nik_MD_project4.sol": {
+			"keccak256": "0x0af20129fb55513b24ad3f580ed3bbfd238890fa31eef8afc790eee6db8537f6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ceff1dc08af32b4ecb5d8ea08106d1c2533a0977fa24bb3c2aba84c60224f165",
-				"dweb:/ipfs/QmcJe9hrMCsGu3v3gvBkrx2m1wjdL5hNGAYsTEGCke6rPN"
+				"bzz-raw://ce9f2a17e92ee607834dc17546c0b96ccb3bfce917843e678d8514347cd553c4",
+				"dweb:/ipfs/QmdP79GCYS4AGykkoPXK3yAdrzjpDcumgZN8H4efztVATz"
 			]
 		}
 	},

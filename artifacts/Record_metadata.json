@@ -6,45 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_record",
-						"type": "address"
-					}
-				],
-				"name": "addRecord",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_record",
-						"type": "string"
-					}
-				],
-				"name": "addRecord",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"inputs": [],
+				"name": "timeOfCreation",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"name": "records",
-				"outputs": [
-					{
-						"internalType": "contract Record",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -64,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Nik_MD_project3_1.sol": "RecordFactory"
+			"Nik_MD_project3_1.sol": "Record"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
